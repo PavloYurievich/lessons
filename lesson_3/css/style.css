@@ -2,13 +2,15 @@
 .header {
     color: blueviolet;
 }
-.navigation {
-}
+
 .main {
     color: rgb(120, 6, 80);
 }
 .about-ukraine{
     color: cornflowerblue;
+}
+.about-ukraine li{
+    color: chartreuse;
 }
 #about-facts{
     color: aqua;
