@@ -1,0 +1,492 @@
+@import url(https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap);
+@import url(../css/fonts.css);
+@import url(./reset.css);
+body{
+    background-color: rgb(54, 54, 54);
+}
+.header {
+    margin: 20px auto;
+    text-align: center;
+}
+.header-lesson h1 {
+    display: inline-block;
+    padding: 15px;
+    font-size: 100px;
+    font-weight: 600;
+    border-radius: 20px;
+    color: black;
+    border: 2px solid rgb(81, 81, 81);
+    background-color: rgb(255, 255, 255);
+}
+.header-lesson:hover h1 {
+    background-color:rgb(68, 70, 70);
+    color: white;
+    transition: 1s;
+    border-radius: 50px;
+}
+.practice {
+    font-size: 48px;
+    font-family: Caveat;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.practice-container {
+    width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    background-color: silver;
+}
+.practice-hover {
+    border: 2px solid rgb(5, 255, 5);
+    border-radius: 10px;
+    background-color: chocolate;
+    padding: 5px 10px;
+}
+.practice-hover:hover{
+    background-color: rgb(120, 52, 4);
+    transition: 1s;
+}
+.practice-active {
+    border: 2px solid rgb(5, 255, 5);
+    border-radius: 10px;
+    background-color: chocolate;
+    padding: 5px 10px;
+}
+.practice-active:active{
+    background-color: brown;
+
+}
+.practice-focus {
+    border: 2px solid rgb(5, 255, 5);
+    border-radius: 10px;
+    background-color: chocolate;
+    padding: 5px 10px;
+}
+.practice-focus:focus{
+    background-color: blue;
+}
+.practice-visited {
+    border: 2px solid rgb(5, 255, 5);
+    border-radius: 10px;
+    background-color: chocolate;
+    padding: 5px 10px;
+}
+.practice-visited:visited{
+    background-color: aqua;
+}
+.practice-target {
+    border: 2px solid rgb(5, 255, 5);
+    border-radius: 10px;
+    background-color: chocolate;
+    padding: 5px 10px;
+}
+.practice-targett{
+    display: inline-block;
+}
+#target{
+    display: inline-block;
+    color: rgb(30, 13, 156);
+    border: 5px solid rgb(144, 9, 9);
+    background-color: rgb(12, 222, 177);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#target:target{
+    color: green;
+    background-color: darkmagenta;
+}
+#target2{
+    display: inline-block;
+    color: rgb(30, 13, 156);
+    border: 5px solid rgb(144, 9, 9);
+    background-color: rgb(12, 222, 177);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#target2:target{
+    color: green;
+    background-color: darkmagenta;
+}
+.practice-first-child {
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.practice-first-child li{
+    text-align: center;
+    border: 5px solid black;
+}
+.practice-first-child li:first-child{
+    background-color: red;
+}
+.practice-last-child {
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.practice-last-child li{
+    text-align: center;
+    border: 5px solid black;
+}
+.practice-last-child li:last-child{
+    background-color: red;
+}
+.practice-first-of-type {
+    text-align: center;
+    border: 5px solid black;
+}
+.practice-first-of-type h2:first-of-type {
+    background-color: red;
+    border: 5px solid black;
+
+}
+.practice-last-of-type {
+    text-align: center;
+    border: 5px solid rgb(0, 0, 0);
+}
+.practice-last-of-type h2:last-of-type{
+    background-color: red;
+    border: 5px solid black;
+}
+.practice-nth-child-even {
+    text-align: center;
+    border: 5px solid black;
+}
+.practice-nth-child-even li{
+    border: 3px solid black;
+}
+.practice-nth-child-even li:nth-child(even){
+    background-color: red;
+}
+.practice-nth-child-odd {
+    text-align: center;
+    border: 5px solid black;
+}
+.practice-nth-child-odd li{
+    border: 3px solid black;
+}
+.practice-nth-child-odd li:nth-child(odd){
+    background-color: red;
+}
+.practice-not {
+    border: 5px solid black;
+}
+.practice-not p{
+    background-color: slategray;
+    border: 5px solid white;
+}
+.practice-not p:not(:last-child){
+    margin-bottom: 40px;
+}
+.game {
+    margin-bottom: 40px;
+}
+.game-container {
+    width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    background-color: silver;
+}
+.game-start {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.game-start h2 {
+    display: inline-block;
+    color: rgb(122, 9, 153);
+    font-size: 50px;
+    border: 2px  solid black;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: aquamarine;
+}
+.game-start h2:hover{
+    background-color: red;
+    color: black;
+    transition: 1s;
+    transform: rotate(360deg)
+}
+.game-start-1 {
+    visibility: hidden;
+    background-color:inherit;
+    width: 60px;
+    height: 100px;
+    margin-left: 40px;
+}
+.game-start h2:hover ~ .game-start-1,
+.game-start-1:hover{
+    background-color: blueviolet;
+    visibility: visible ;
+}
+.game-start-2 {
+    visibility: hidden;
+    background-color:inherit;
+    width: 960px;
+    height: 60px;
+    margin-left: 40px;
+}
+.game-start-1:hover ~ .game-start-2,
+.game-start-2:hover{
+    background-color: blueviolet;
+    visibility: visible ;
+}
+.game-start-3 {
+    visibility: hidden;
+    background-color:inherit;
+    width: 60px;
+    height: 100px;
+    margin-left: 940px;
+}
+.game-start-2:hover ~ .game-start-3,
+.game-start-3:hover{
+    background-color: blueviolet;
+    visibility: visible ;
+}
+.game-start-4 {
+    visibility: hidden;
+    background-color:inherit;
+    width: 960px;
+    height: 60px;
+    margin-left: 40px;
+}
+.game-start-3:hover ~ .game-start-4,
+.game-start-4:hover{
+    background-color: blueviolet;
+    visibility: visible ;
+}
+.game-start-5 {
+    visibility: hidden;
+    background-color:inherit;
+    width: 60px;
+    height: 240px;
+    margin-left: 40px;
+}
+.game-start-4:hover ~ .game-start-5,
+.game-start-5:hover{
+    background-color: blueviolet;
+    visibility: visible ;
+}
+.game-start-6 {
+    visibility: hidden;
+    background-color:inherit;
+    width: 990px;
+    height: 60px;
+    margin-left: 40px;
+}
+.game-start-5:hover ~ .game-start-6,
+.game-start-6:hover{
+    background-color: blueviolet;
+    visibility: visible ;
+}
+.game-start-7 {
+    visibility: hidden;
+    background-color:inherit;
+    width: 60px;
+    height: 220px;
+    margin-left: 970px;
+}
+.game-start-6:hover ~ .game-start-7,
+.game-start-7:hover{
+    background-color: blueviolet;
+    visibility: visible ;
+}
+.game-start-finish{
+    display: inline-block;
+    font-size: 50px;
+    border: 2px  solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 900px;
+    background-color: white;    
+}
+.game-start-finish:hover {
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+.about-me {
+    background: url(../img/about-me/gradients.png) 0 0/cover no-repeat;
+
+}
+.about-me-container {
+    width: 1180px;
+    padding: 15px 15px 0 15px;
+    margin: 0 auto;
+
+}
+.about-me-main{
+    width: 992px;
+    text-align: center;
+    margin: 0 auto;
+}
+.about-me-main h2{
+    color: #FFF;
+    font-family: Exo;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    text-transform: uppercase; 
+    margin-bottom: 20px;
+}
+.about-me-main h2::after{
+    content: "";
+    width: 40%;
+    display: block;
+    height: 1px;
+    background: linear-gradient(90deg, #F00 0%, #42FF00 48.9%, #2400FF 100%);
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+.about-me-main p {
+    color: #FFF;
+    text-align: center;
+    font-family: Exo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 222.222%;
+    letter-spacing: -0.36px;
+    text-transform: capitalize; 
+    margin-bottom: 60px;
+}
+.about-me-list{
+    text-align: center;
+    color: #FFF;
+    font-family: Orbitron;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    text-transform: capitalize; 
+    margin-bottom: 50px;
+}
+.about-me-list li{
+    display: inline-block;
+    
+    
+}
+.about-me-list li::after{
+    content: "";
+    background-image: url(../img/about-me/ellipse.svg);
+    width: 10px;
+    height: 10px; 
+    margin-right:60px;
+    margin-left: 60px;
+
+}
+.about-me-list li:last-child::after{
+    margin-right: 30px;
+}
+.about-me-contacts {
+    width: 959px;
+    margin: 0 auto;
+    color: #FFF;
+    font-family: Exo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 25px;
+    
+}
+.about-me-contacts a:not(:last-child){
+    margin-right: 80px; 
+}
+.about-me-contacts a :last-child{
+    text-transform: lowercase; 
+}
+.about-me-call::before{
+    content: "";
+    background: url(../img/about-me/call.svg);
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.about-me-location::before{
+    content: "";
+    background: url(../img/about-me/location.svg);
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.about-me-mail::before{
+    content: "";
+    background: url(../img/about-me/email.svg);
+    width: 20px;
+    height: 15px;
+    margin-right: 20px;
+}
+.krovato {
+    background-color: #FFF;
+    padding: 20px 0 20px 0;
+    font-family: Proxima Nova;
+    color: var(--Theme-Dark, #2B2929);
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.krovato-container {
+    width: 1100px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.krovato-title{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+.krovato-main{
+    margin-bottom: 40px;
+}
+.krovato-main p:not(:last-child){
+    margin-bottom: 20px;
+}
+.krovato-main img{
+    max-width: 1070px;
+    border-radius: 8px; 
+    margin-bottom: 40px;
+}
+.krovato-offers {
+}
+.krovato-offers p{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+.krovato-list {
+    margin-bottom: 40px;
+}
+.krovato-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.krovato-item{
+    padding-left: 47px;
+    background: url(../img/krovato/mark.svg) 0 0 / 32px no-repeat;
+}
+.footer {
+    margin: 0 auto;
+    text-align: center;
+}
+.up {
+    display: inline-block;
+    font-size: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: rgb(246, 202, 202);
+}
+.up:hover{
+    background-color: rgb(31, 184, 0);
+    color: rgb(112, 42, 181);
+    transition: 1s;
+    border-radius: 30px;
+}
