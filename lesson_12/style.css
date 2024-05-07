@@ -37,12 +37,20 @@ body{
     text-shadow: 2px 2px 2px ;
 }
 .page__car {
-}
-.page__container {
     padding-top: 100px;
     padding-bottom: 100px;
-    background: url(./img/roud.webp) 0 0/100% 100% no-repeat;
-    max-height: 100%;    
+    background-image: url(./img/roud.webp);
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.page__container {
+
+
+}
+.page__car{
+
 }
 .body-car{
     animation-name: move;
