@@ -314,7 +314,7 @@ body{
         translate: -500px 0px;
     }
     100%{
-        translate: 1150px 0px;
+        translate: 1500px 0px;
     }
 }
 @keyframes titles{
