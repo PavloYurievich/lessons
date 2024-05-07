@@ -253,7 +253,7 @@ body{
     text-align: center;
     font-size: 38px;
 }
-@keyframes headlight{
+@keyframes headlight {
     0%{
         background-color: rgb(255, 255, 0);
         filter: blur(6px);
@@ -277,7 +277,7 @@ body{
     }
 
 }
-@keyframes headlight-back{
+@keyframes headlight-back {
     0%{
         filter: blur(6px);
         position: absolute;
@@ -301,7 +301,7 @@ body{
     }
 
 }
-@keyframes rotate{
+@keyframes rotate {
     0%{
         rotate: 0;
     }
@@ -309,7 +309,7 @@ body{
         rotate: 360deg;
     }
 }
-@keyframes move{
+@keyframes move {
     0%{
         translate: -500px 0px;
     }
@@ -317,7 +317,7 @@ body{
         translate: 1500px 0px;
     }
 }
-@keyframes titles{
+@keyframes titles {
     0%{
         transform: scale(1.2);
         text-shadow: 2px 2px 2px ;
