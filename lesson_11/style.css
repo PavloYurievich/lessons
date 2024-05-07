@@ -1,0 +1,424 @@
+@import url(./reset.css);
+.wrapper {
+    height: 100%;
+}
+.header{
+    background-color: rgb(92, 92, 92);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    
+}
+.header--fix{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.header__container {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header__nav {
+    font-size: 0px;
+    
+    
+}
+.header__title {
+    display: inline-block;
+    padding: 20px 0;
+    line-height: 1.2;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-right: 270px;
+}
+.header__title:hover{
+    transform: scale(1.2);
+    text-shadow: 2px 2px 2px ;
+}
+.header__menu {
+    display: inline-block;
+    
+}
+.menu {
+    display: inline-block;
+    font-size: 0;
+
+
+}
+.menu__item {
+    display: inline-block;
+}
+.menu__item:not(:last-child) {
+    margin-right: 140px;
+}
+.menu__link {
+    text-align: center;
+    display: inline-block;
+    padding: 20px 0;
+    line-height: 1.2;
+    font-size: 35px;
+    text-transform: capitalize;
+    
+}
+.menu__link:hover{
+    transform: scale(1.2);
+    text-shadow: 2px 2px 2px ;
+}
+.page {
+    padding-top: 130px;
+    padding-bottom: 50px;
+    font-size: 25px;
+}
+.page__container {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.page__container > :not(:last-child) {
+    margin-bottom: 150px;
+}
+.page__practice {
+    text-align: center;
+}
+.practice-2d {
+    font-size: 0;
+}
+.practice-2d__title-2d {
+    font-size: 50px;
+    text-align: center;
+}
+.practice-2d__block {
+
+}
+.practice-2d__cards {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 16px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(33, 171, 127, 0.321);
+    margin: 10px;
+}
+.practice-2d__item {
+    width: 200px;
+    height: 200px;
+    background-color: #37748dc7;
+    padding: 20px 10px;
+    transition: all 0.6s;
+}
+.practice-2d__cards:hover .practice-2d__pixel{
+    transform: translate(50px, 20px);
+}
+.practice-2d__cards:hover .practice-2d__interest {
+    transform: translate(25%, -35%);
+}
+.practice-2d__cards:hover .practice-2d__scale-03 {
+    transform: scale(0.3);
+}
+.practice-2d__cards:hover .practice-2d__scale-16 {
+    transform: scale(1.6);
+}
+.practice-2d__cards:hover .practice-2d__scale-11 {
+    transform: scale(-1,1);
+}
+.practice-2d__cards:hover .practice-2d__scale80deg {
+    transform: rotate(80deg);
+}
+.practice-2d__cards:hover .practice-2d__scale-60deg {
+    transform: rotate(-60deg);
+}
+.practice-2d__cards:hover .practice-2d__scale360deg {
+    transform: rotate(360deg);
+}
+.practice-2d__cards:hover .practice-2d__rotate-distortion {
+    transform: rotateX(-30deg) rotateY(40deg);
+
+}
+.practice-2d__cards:hover .practice-2d__skew25deg {
+    transform: skew(25deg);
+}
+.practice-2d__cards:hover .practice-2d__skew10-20deg {
+    transform: skew(10deg, 20deg);
+}
+.practice-2d__cards:hover .practice-2d__skew30deg {
+    transform: skewX(30deg);
+}
+.practice-2d__cards:hover .practice-2d__skew50deg {
+    transform: skewY(50deg);
+}
+.practice-2d__cards:hover .practice-2d__mix-translate {
+    transform: translate(30px, 20px) scale(0.3) rotate(-25deg) skew(-30deg);
+}
+.practice-3d {
+    font-size: 0;
+}
+.practice-3d__title-3d {
+    font-size: 50px;
+    text-align: center;
+}
+.practice-3d__block {
+
+}
+.practice-3d__cards {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 16px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(33, 171, 127, 0.321);
+    margin: 10px;
+}
+.practice-3d__item {
+    width: 200px;
+    height: 200px;
+    background-color: #37748dc7;
+    padding: 20px 10px;
+    transition: all 0.6s;
+}
+.practice-3d__cards:hover .practice-3d__translate3d {
+    transform: translate3d(-50px, -100px, -90px);
+}
+.practice-3d__cards:hover .practice-3d__scale3d {
+    transform: scale3d(1.3, 1.3, 5);
+}
+.practice-3d__cards:hover .practice-3d__rotate3d {
+    transform: rotate3d(20, 20, 20, 50deg);
+}
+.practice-3d__cards:hover .practice-3d__rotatex {
+    transform: rotateX(50deg);
+}
+.practice-3d__cards:hover .practice-3d__mix{
+    transform: translate3d(20px, 10px, 20px) scale3d(1.2, 1.2, 3) rotate(-40deg);
+}
+.practice-3d__item {
+    position: relative;
+}
+.practice-3d__flip-front,
+.practice-3d__flip-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    padding: 20px 10px;
+}
+.practice-3d__flip-front{
+    transform: rotateX(0deg);
+    background-color: #77608d;
+    
+}
+.practice-3d__cards:hover .practice-3d__flip-front{
+    transform: rotateX(180deg);
+
+}
+.practice-3d__flip-back{
+    transform: rotateX(-180deg);
+    background-color: #7a956b;
+    backface-visibility: hidden;
+
+}
+.practice-3d__cards:hover .practice-3d__flip-back{
+    transform: rotateX(0deg);
+
+}
+
+
+.page__car {
+    width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+.car {
+    padding-bottom: 100px;
+}
+.car__body {
+    width: 900px;
+	height: 200px;
+	margin: 0 auto;
+	position: relative;
+    padding: 50px 50px;
+}
+.body-car {
+
+}
+.body-car__roof {
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 250px;
+    height: 103px;
+    background-color: blueviolet;
+    border-radius: 49px 82px 0px 0px;
+    -webkit-border-radius: 49px 82px 0px 0px;
+    -moz-border-radius: 49px 82px 0px 0px;
+    border: 2px solid black;
+    z-index: 2;
+}
+.body-car__bod {
+    position: absolute;
+    top: 153px;
+    left: 50px;
+    width: 300px;
+    height: 100px;
+    background-color: blueviolet;
+    border-radius: 0px 19px 19px 19px;
+    -webkit-border-radius: 0px 19px 19px 19px;
+    -moz-border-radius: 0px 19px 19px 19px;
+}
+.body-car__door {
+    position: absolute;
+    top: 153px;
+    left: 125px;
+    width: 80px;
+    height: 99px;
+    background-color: rgb(240, 140, 0);
+    border: 1px solid black;
+}
+.body-car__door:hover{
+    background-color:brown;
+}
+.body-car__door-handle{
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 20px;
+    height: 7px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    z-index: 4;
+}
+.body-car__door-handle:hover{
+    background-color: rgb(255, 0, 0);
+}
+.body-car__headlights {
+}
+.headlights {
+    position: relative;
+}
+.headlights__front {
+    position: absolute;
+    background-color: rgb(82, 0, 159);
+    width: 15px;
+    height:30px;
+    top: 11px;
+    left: 299px;
+    border-radius: 0px 12px 12px 0px;
+    -webkit-border-radius: 0px 12px 12px 0px;
+    -moz-border-radius: 0px 12px 12px 0px;
+}
+.headlights__back {
+    position: absolute;
+    background-color: rgb(131, 7, 7);
+    width: 15px;
+    height:45px;
+    left: 0px;
+    right: 25px;
+    top: 15px;
+    z-index: 7;
+    border: 2px solid black;
+}
+.headlights__back:hover{
+    background-color: rgb(255, 0, 0);
+}
+.headlights__front:hover .headlights__light-front{
+    position: absolute;
+    background-color: yellow;
+    width: 80px;
+    height: 45px;
+    left: 15px;
+    bottom: 2px;
+    border-radius: 200px 0px 0px 200px;
+    -webkit-border-radius: 200px 0px 0px 200px;
+    -moz-border-radius: 200px 0px 0px 200px;
+    filter: blur(6px);
+
+}
+.headlights__back:hover .headlights__light-back{
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    width: 50px;
+    height: 45px;
+    right: 10px;
+    bottom: 2px;
+    border-radius: 0px 49px 48px 0px;
+    -webkit-border-radius: 0px 49px 48px 0px;
+    -moz-border-radius: 0px 49px 48px 0px;
+    filter: blur(6px);
+
+}
+.body-car__windows {
+}
+.windows-car {
+}
+.windows-car__front {
+    position: absolute;
+    width: 80px;
+    height: 101px;
+    background-color: silver;
+    top: 51px;
+    left: 220px;
+    z-index: 3;
+    border-radius: 0px 200px 0px 0px;
+    -webkit-border-radius: 0px 200px 0px 0px;
+    -moz-border-radius: 0px 200px 0px 0px;
+    border: 1px solid black;
+
+}
+.windows-car__back {
+    position: absolute;
+    width: 50px;
+    height: 103px;
+    background-color: silver;
+    top: 50px;
+    left: 50px;
+    z-index: 3;
+    border-radius: 45px 0px 0px 0px;
+    -webkit-border-radius: 45px 0px 0px 0px;
+    -moz-border-radius: 45px 0px 0px 0px;
+    border: 2px solid black;
+}
+.windows-car__side {
+    position: absolute;
+    width: 80px;
+    height: 103px;
+    background-color: silver;
+    top: 50px;
+    left: 125px;
+    z-index: 3;
+    border: 1px solid black;
+}
+.wheel {
+    position: relative;
+}
+.wheel__left {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: rgb(0, 255, 0);
+    border: 4mm ridge black;
+}
+.wheel__right {
+    position: absolute;
+    top: 20px;
+    left: 245px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: rgb(0, 255, 0);
+    border: 4mm ridge black;
+}
+.footer {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 38px;
+}

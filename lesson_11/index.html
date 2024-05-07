@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Lesson_11</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header header--fix">
+            <div class="header__container">
+                <div class="header__nav">
+                    <h1 class="header__title">Lesson_11</h1>
+                    <div class="header__menu">
+                        <ul class="header__list menu">
+                            <li class="menu__item">
+                                <a href="#practice-2d" class="menu__link">2D</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#practice-3d" class="menu__link">3D</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#car" class="menu__link">Car</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+        </header>
+        <main class="page">
+            <div class="page__container">
+                <div id="practice-2d" class="page__practice practice-2d">
+                    <h2 class="practice-2d__title-2d">CSS transform 2D</h2>
+                    <div class="practice-2d__block">
+                        <div class="practice-2d__cards">
+                            <div class="practice-2d__item practice-2d__pixel">Translate (50px, 20px)</div>
+                        </div>
+                        <div class="practice-2d__cards">
+                            <div class="practice-2d__item practice-2d__interest">Translate (25%, -35%)</div>
+                        </div>
+                        <div class="practice-2d__cards">
+                            <div class="practice-2d__item practice-2d__scale-03">Scale (0.3)</div>
+                        </div>
+                        <div class="practice-2d__cards">
+                            <div class="practice-2d__item practice-2d__scale-16">Scale (1.6)</div>
+                        </div>
+                        <div class="practice-2d__cards">
+                            <div class="practice-2d__item practice-2d__scale-11">Scale (-1, 1)</div>
+                        </div>
+                    </div>
+                    <div class="practice-2d__block">
+                        <div class="practice-2d__cards">
+                            <div class="practice-2d__item practice-2d__scale80deg">rotate(80deg)</div>
+                        </div>
+                        <div class="practice-2d__cards">
+                            <div class="practice-2d__item practice-2d__scale-60deg">rotate(-60deg)</div>
+                        </div>
+                        <div class="practice-2d__cards">
+                            <div class="practice-2d__item practice-2d__scale360deg">rotate(360deg)</div>
+                        </div>
+                        <div class="practice-2d__cards">
+                            <div class="practice-2d__item practice-2d__rotate-distortion">rotateX(-30deg) rotateY(40deg)</div>
+                        </div>
+                        <div class="practice-2d__cards">
+                            <div class="practice-2d__item practice-2d__skew25deg">skew(25deg)</div>
+                        </div>
+                    </div>
+                    <div class="practice-2d__block">
+                        <div class="practice-2d__cards">
+                            <div class=" practice-2d__item practice-2d__skew10-20deg">skew(10deg, 20deg)</div>
+                        </div>
+                        <div class="practice-2d__cards">
+                            <div class="practice-2d__item practice-2d__skew30deg">skewX(30deg)</div>
+                        </div>
+                        <div class="practice-2d__cards">
+                            <div class="practice-2d__item practice-2d__skew50deg">skewY(50deg)</div>
+                        </div>
+                        <div class="practice-2d__cards">
+                            <div class="practice-2d__item practice-2d__mix-translate">translate(30px, 20px) scale(0.3) rotate(-25deg) skew(-30deg) </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="practice-3d" class="page__practice practice-3d">
+                    <h2 class="practice-3d__title-3d">CSS transform 3D</h2>
+                    <div class="practice-3d__block">
+                        <div class="practice-3d__cards">
+                            <div class="practice-3d__item practice-3d__translate3d">translate3d(-50px, -100px, -90px)</div>
+                        </div>
+                        <div class="practice-3d__cards">
+                            <div class="practice-3d__item practice-3d__scale3d">scale3d(1.3, 1.3, 5) </div>
+                        </div>
+                        <div class="practice-3d__cards">
+                            <div class="practice-3d__item practice-3d__rotate3d">rotate3d(20, 20, 20, 50deg)</div>
+                        </div>
+                        <div class="practice-3d__cards">
+                            <div class="practice-3d__item practice-3d__rotatex">rotateX(50deg)</div>
+                        </div>
+                    </div>
+                    <div class="practice-3d__block">
+                        <div class="practice-3d__cards">
+                            <div class="practice-3d__item practice-3d__mix">translate3d(20px, 10px, 20px) scale3d(1.2, 1.2, 3) rotate(-40deg)</div>
+                        </div>
+                        <div class="practice-3d__item practice-3d__cards">
+                            <div class="practice-3d__front-back"> 
+                                <div class="practice-3d__flip-front" >FRONT</div>
+                                <div class="practice-3d__flip-back">BACK</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="car" class="page__car car">
+                    <div class="car__body body-car">
+                        <div class="body-car__roof"></div>
+                        <div class="body-car__bod"></div>
+                        <div class="body-car__door">
+                            <div class="body-car__door-handle"></div>
+                        </div>
+                        <div class="body-car__headlights headlights">
+                            <div class="headlights__front">
+                                <div class="headlights__light-front"></div>
+                            </div>
+                            <div class="headlights__back">
+                                <div class="headlights__light-back"></div>
+                            </div>
+                        </div>        
+                        <div class="body-car__windows windows-car">
+                            <div class="windows-car__front"></div>
+                            <div class="windows-car__back"></div>
+                            <div class="windows-car__side"></div>
+                        </div>
+                    </div>
+                    <div class="car__body wheel">
+                        <div class="wheel__left"></div>
+                        <div class="wheel__right"></div>
+                    </div>
+            
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p class="footer__text">Весна 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
