@@ -738,11 +738,6 @@ body {
 			background: linear-gradient(90deg, #f00 0%, #42ff00 48.9%, #2400ff 100%);
 			margin-bottom: 80px;
 			@include adaptiveValue("margin-bottom", 80, 30, 0, 1272, 767.98);
-			@media (max-width: 991.98px) {
-				&__button {
-				display: none;
-				}
-			}
 		}
 		}
 
